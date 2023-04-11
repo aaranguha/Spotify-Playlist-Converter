@@ -7,7 +7,7 @@ import time
 
 # Set up the authorization
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="889aea68732540fcb8f5ad3e672f548f",
-                                               client_secret="7e5819bcb9fb4b56a94e0ca12216abff",
+                                               client_secret="secret key, can't be displayed for security reasons",
                                                redirect_uri="https://github.com/",
                                                scope="playlist-modify-public"))
 
