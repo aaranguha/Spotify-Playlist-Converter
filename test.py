@@ -2,19 +2,6 @@ import os
 import appscript as aps
 import subprocess
 
-def edit_song_info(file_path):
-    with open(file_path, 'r') as file:
-        lines = file.readlines()
-    with open(file_path, 'w') as file:
-        for line in lines:
-            line = line.strip()
-            parts = line.split(',')
-            if len(parts) >= 3:
-                song_name = parts[1]
-                artist_name = parts[2]
-                new_line = "{} - {}\n".format(song_name, artist_name)
-                file.write(new_line)
-
 def get_playlist_data(playlist_name, output_file):
     script = '''
         tell application "Music"
@@ -37,11 +24,9 @@ def get_playlist_data(playlist_name, output_file):
         file.write(output)
 def main():
     playlist_name = input("Enter playlist name: ")
-    output_file = "songs"
+    output_file = input("Enter output file name: ")
     get_playlist_data(playlist_name, output_file + ".txt")
     print("Playlist exported successfully to {}.txt".format(output_file))
-    edit_song_info('songs.txt')
-
 
 if __name__ == '__main__':
     main()
