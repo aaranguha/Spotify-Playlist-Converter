@@ -12,12 +12,15 @@ time
 You can install the dependencies using pip:
 
 bash
-Copy code
+Copy code:
+
 pip install appscript spotipy
-Usage
+
+
+Usage:
 To use this program, you must have both an Apple Music and Spotify account.
 
-Open the spotify_playlist_creator.py file in a code editor.
+Open the AppleToSpotify.py file in a code editor.
 
 
 Edit the client_id, client_secret, and redirect_uri values in the SpotifyOAuth call with your own values.
