@@ -1,4 +1,4 @@
-#Spotify Playlist Creator
+# Spotify Playlist Creator
 Link to Youtube Demo Video: https://www.youtube.com/watch?v=HyMttDcVTHA&ab_channel=AaranGuha
 
 This program allows you to export a playlist from Apple Music and create a new playlist in Spotify with the same songs.
@@ -41,5 +41,5 @@ get_playlist_data(playlist_name, output_file): This function exports the tracks 
 main(): This function runs the main logic of the program. It prompts the user to enter the name of the Apple Music playlist they want to export, exports the playlist to a text file, edits the song information in the text file, and creates a new Spotify playlist with the edited songs.
 
 
-#Disclaimer
+# Disclaimer
 This program is intended for educational purposes only. Use at your own risk. The author is not responsible for any damage or loss of data caused by this program. (It should work doe :))
